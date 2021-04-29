@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+
+<div class="container" id="container" #container>
+	<div class="form-container sign-up-container">
+		<form action="#" >
+			<h3>Create Account</h3>
+			
+
+			<input type="text" placeholder="Name" required/>
+			<input type="email" placeholder="Email"  required/>
+			<input type="password" placeholder="Password" required/>
+            <input type="text" placeholder="Address" required/>
+            <input type="number" placeholder="Contact No." required>
+            <input type="date" placeholder="Date Of birth" required/>
+
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#" #SingIn="ngForm">
+			<h1>Sign in</h1>
+
+			<input type="email" placeholder="Email" name="username" [(ngModel)]=username/>
+			<input type="password" placeholder="Password" name="password" [(ngModel)]=password/>
+			<a href="#">Forgot your password?</a>
+			<button (click)="OnLogin()">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn" (click)="OpenSignIn()">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp" (click)="OpenSignUp()">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+

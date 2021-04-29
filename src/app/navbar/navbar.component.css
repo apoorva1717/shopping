@@ -1,12 +1,12 @@
-/*navbar-dark .navbar-nav .nav-link {
-    font-size: 30px;
-    font-family: fantasy;
-    color: rgba(255,255,255,.55);
-}*/
+#icon{
+    opacity:90%
 
-.size {
-    font-size: 30px;
-    font-family: fantasy;
-    color: rgba(255,255,255,.55);
-    padding-left: 20px;
 }
+
+#icon:hover{
+    opacity:100%;
+    transform: scale(1.5);
+
+}
+
+    

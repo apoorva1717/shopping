@@ -25,31 +25,30 @@
 
 
 .custom{
-    margin-left: 20%;
-    height:400px;
-    width:60%;
-    margin-top:10%;
-    
-        
-        text-align: center;
-        color: black;
-        font-size: x-large;
-     
-    
+    margin-left: 15%;
+    height:500px;
+    width:70%;
+    margin-top:5%;
+    box-shadow: 0 18px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px 50px;
+   
 }
+.custom:hover{
+    opacity:90%;
+    transform: scale(1.05);
+   
+}
+
+
 
 .custom img{
     object-fit: fill;
-    height: 400px;
+    width:90%;
+    height: 500px;
+    border-radius: 15px 50px
 }
 
-.centered {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    
-  }
+
 
 
 
@@ -57,5 +56,10 @@
 
 .custom-carousal{
     margin-top: 10%;
+}
+
+
+.clr{
+    background-color: rgb(235, 232, 231);
 }
 
