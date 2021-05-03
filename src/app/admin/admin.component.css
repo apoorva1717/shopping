@@ -1,14 +1,25 @@
-body {
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #66a094;
+    color: white;
+    font-size: 40px;
+    font-family: Oswald;
+  }
+
+.wrap {
     color: #404E67;
-    background: #F5F7FA;
+    background: #000000;
     font-family: 'Open Sans', sans-serif;
+    height:100000px;
 }
 .table-wrapper {
     width: 700px;
     margin: 30px auto;
-    background: #fff;
+    background: rgb(187, 156, 156);
     padding: 20px;	
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-top: 100px;
 }
 .table-title {
     padding-bottom: 10px;
