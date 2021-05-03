@@ -14,11 +14,11 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
       <form class="d-flex search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2"  name="searchInput" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="search">
         <!--<button class="btn btn-outline-success" type="submit"> 
            <i class="fa fa-search" id="icon" style="font-size:33px; padding: 0px; padding-right: 30px;color:rgb(102, 98, 98);margin-top: 4px;"></i>
           </button>-->
-          <button type="submit" style="border:none;"><i class="fa fa-search" style="font-size:25px; padding:0px;color:rgb(146, 140, 140);margin-top:-4px;"></i></button>
+          <button type="submit" style="border:none;" (click)="onSearch()"><i class="fa fa-search" style="font-size:25px; padding:0px;color:rgb(146, 140, 140);margin-top:-4px;"></i></button>
       </form>
 
       <ul class="navbar-nav ms-auto">
@@ -48,8 +48,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a  [routerLink]="['/login']" routerLinkActive="active" class="dropdown-item">Login</a>
-            <a class="dropdown-item" href="#">Logout</a>
-            <a class="dropdown-item" href="#">Orders</a>
+            <a class="dropdown-item" (click)="Logout()">Logout</a>
+            
           </div>
         </li>
        

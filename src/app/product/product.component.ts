@@ -10,16 +10,23 @@ import { ApiService } from '../service/api.service';
 })
 export class ProductComponent implements OnInit {
   prods :any;
-  gender:string;
+  gender:string="";
+  search:string="";
   constructor(private route:ActivatedRoute,private ser:ApiService) { 
     this.route.params.subscribe((param)=>{
       this.gender=param.gender
     })
     this.route.queryParams.subscribe((params)=>{
-      console.log(params)
+      this.search=params.search
+      
     })
-    
-    this.ser.getProduct(this.gender).subscribe((prod)=>{
+    if(this.gender==undefined){
+      this.gender=""
+    }
+    if(this.search==undefined){
+      this.search=""
+    }
+    this.ser.getProduct(this.gender,this.search).subscribe((prod)=>{
       console.log(prod);
       this.prods=prod;
     })

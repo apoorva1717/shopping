@@ -105,5 +105,8 @@ export class ShopcartComponent implements OnInit {
   //   })
   
   } 
+  shopping(){
+    this.router.navigateByUrl("/product")
+  }
 
 }
