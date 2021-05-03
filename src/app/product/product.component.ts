@@ -13,8 +13,20 @@ export class ProductComponent implements OnInit {
   gender:string="";
   search:string="";
   constructor(private route:ActivatedRoute,private ser:ApiService) { 
+    this.route.paramMap.subscribe(params => {
+      this.ngOnInit();
+  });
+    
+
+  }
+
+  ngOnInit(): void {
+    this.getdata()
+  }
+  getdata(){
     this.route.params.subscribe((param)=>{
       this.gender=param.gender
+      
     })
     this.route.queryParams.subscribe((params)=>{
       this.search=params.search
@@ -26,12 +38,10 @@ export class ProductComponent implements OnInit {
     if(this.search==undefined){
       this.search=""
     }
+
     this.ser.getProduct(this.gender,this.search).subscribe((prod)=>{
       console.log(prod);
       this.prods=prod;
     })
-  }
-
-  ngOnInit(): void {
   }
 }
