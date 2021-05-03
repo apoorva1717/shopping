@@ -16,6 +16,12 @@ export class ApiService {
   signup(data):Observable<Object>{
     return this.http.post(this.BaseUrl+'/Signup',data);
   }
+
+  getallProduct():Observable<Object>{
+    
+    return this.http.get("http://localhost:55185/api/products?gender=")
+  }
+
   getProduct(data):Observable<Object>{
     console.log(data);
     return this.http.get("http://localhost:55185/api/products?gender="+data)
@@ -28,4 +34,24 @@ export class ApiService {
     console.log(data);
     return this.http.post("http://localhost:55185/api/user/" +id+"/order",data)
   }
+
+  addProduct(data):Observable<Object>{
+    console.log(data);
+    return this.http.post("http://localhost:55185/api/admin/product",data)  
+  }
+
+  editProduct(id:string,data):Observable<Object>{
+    console.log(data);
+    return this.http.put("http://localhost:55185/api/admin/product/"+id,data) 
+    
+  }
+
+
+  adminLogin(data):Observable<Object>{
+    console.log(data);
+    return this.http.post("http://localhost:55185/api/admin/Login",data)
+    
+  }
+
+
 }

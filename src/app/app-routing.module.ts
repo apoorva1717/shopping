@@ -8,6 +8,10 @@ import { ProductComponent } from './product/product.component';
 import { ProductdetailComponent } from './productdetail/productdetail.component';
 import { TestComponent } from './test/test.component';
 import {ShopcartComponent} from './shopcart/shopcart.component'
+import { Admin3Component } from './admin3/admin3.component';
+import { AdminupdateComponent } from './adminupdate/adminupdate.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
 
 
 const routes: Routes = [
@@ -20,7 +24,10 @@ const routes: Routes = [
   {path:'cart',component:ShopcartComponent},
   {path:'nav',component:NavbarComponent},
   {path:'footer',component:FooterComponent},
-
+  {path:'admin',component:AdminComponent},
+  {path:'add',component:Admin3Component},
+  {path:'edit/:id',component:AdminupdateComponent},
+  {path:'adminlogin',component:AdminloginComponent},
   {path:'',redirectTo:'/home',pathMatch:'prefix'},
 ];
 

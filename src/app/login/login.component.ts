@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
  
    OnLogin(){
       this.api.login(this.login).subscribe(async res=>{
+        console.log(res);
         localStorage.setItem("user",res["uid"]) ;
         await this.snackbar.open(": :Login Successful",'',{
           verticalPosition:'top',

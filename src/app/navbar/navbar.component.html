@@ -12,11 +12,20 @@
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <form class="d-flex search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <!--<button class="btn btn-outline-success" type="submit"> 
+           <i class="fa fa-search" id="icon" style="font-size:33px; padding: 0px; padding-right: 30px;color:rgb(102, 98, 98);margin-top: 4px;"></i>
+          </button>-->
+          <button type="submit" style="border:none;"><i class="fa fa-search" style="font-size:25px; padding:0px;color:rgb(146, 140, 140);margin-top:-4px;"></i></button>
+      </form>
+
       <ul class="navbar-nav ms-auto">
 
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-size:0px; padding: 20px;">
-                <i class="fa fa-search" id="icon" style="font-size:35px; padding: 0px; padding-right: 30px;color:rgb(102, 98, 98);margin-top: 4px;"></i>
+                <i class="fas fa-tshirt" id="icon" style="font-size:33px; padding: 0px; padding-right: 30px;color:rgb(102, 98, 98);margin-top: 4px;"></i>
             </a>
 
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -24,9 +33,7 @@
                 <a  [routerLink]="['/product/women']" routerLinkActive="active" class="dropdown-item">Women</a>
                 <a  [routerLink]="['/product/kids']" routerLinkActive="active" class="dropdown-item">Kids</a>
 
-              <!--<a class="dropdown-item" href="#">Men</a>
-              <a class="dropdown-item" href="#">Women</a>   
-              <a class="dropdown-item" href="#">Kids</a>-->
+            
             </div>    
         </li>
 
@@ -47,8 +54,11 @@
         </li>
        
       </ul>
+
+      
      
     </div>
   </nav>
+
 
   <router-outlet></router-outlet>

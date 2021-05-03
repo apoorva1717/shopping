@@ -1,0 +1,13 @@
+<div class="form-container sign-in-container">
+    <form #SignIn="ngForm">
+        <h1>Sign in</h1>
+
+        <input type="email" placeholder="Email" name="name" required #name="ngModel" [(ngModel)]=login.email/>
+        <div *ngIf="name.invalid && (name.dirty || name.touched)" class=error>Please enter data</div>
+        
+        <input type="password" placeholder="Password" name="password" required [(ngModel)]=login.password/>
+        <a href="#">Forgot your password?</a>
+        
+        <button [disabled]="SignIn.invalid" (click)="OnLogin()">Sign In</button>
+    </form>
+</div>
