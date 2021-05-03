@@ -27,7 +27,7 @@ input,
     
 }
 .wrap{
-    background-color: black;
+    background-color: rgb(223, 212, 212);
     height:1000px;
 }
 
@@ -35,6 +35,7 @@ input,
     padding: 60px;
     text-align: center;
     background: #66a094;
+    background: rgb(59, 59, 59);
     color: white;
     font-size: 40px;
     font-family: Oswald;
@@ -52,7 +53,7 @@ input,
   border-radius: 4px;
   margin-top: 7%;
   margin-left: 15% ;
-  background-color:#66a094;
+  background-color:rgb(59, 59, 59);
   opacity: 0.85;
   display: inline-block;
   font-size: 17px;

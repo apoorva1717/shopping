@@ -10,7 +10,7 @@ import { ApiService } from '../service/api.service';
 export class Admin3Component implements OnInit {
 
   image:string
-  constructor(private ser:ApiService) { }
+  constructor(private ser:ApiService,private route:Router) { }
 
   ngOnInit(): void {
   }
@@ -18,7 +18,10 @@ export class Admin3Component implements OnInit {
   onSubmitadd(data:any)
   {
     this.ser.addProduct(data).subscribe(e=>{
-      console.log(e);  
+      console.log(e); 
+      alert("Done")
+      this.route.navigateByUrl('/admin')
+
     })
 
    
