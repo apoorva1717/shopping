@@ -12,19 +12,19 @@
 */
 
 .mainContainer{
-    height: 100%;
+    height: auto;
     width: 95%;
     position: relative;
     margin-left: 5%;
 }
 .ProdcutInside{
-    margin:0;
+    
     position: relative;
     display: inline-block;
     height: 250px;
     width:300px;
-    margin-top: 5%;
-    
+    margin-top: 80px;
+    margin-bottom: 100px;
     
 }
 
