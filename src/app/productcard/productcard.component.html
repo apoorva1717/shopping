@@ -3,18 +3,18 @@
     <div class="container">
 
 
-      <div class="top"></div>
+      <div class="top"  style="background: url({{prod.image}}) no-repeat  center center ;background-size:cover;"></div>
 
 
       <div class="bottom">
         <div class="left">
           <div class="details">
             <div class="title">
-                <a  [routerLink]="['/detail']" routerLinkActive="active" class="dropdown-item"><p>this  product</p></a>
+                <a  [routerLink]="['/detail']" routerLinkActive="active" class="dropdown-item"><p>{{prod.name}}</p></a>
                 
             </div>
             <div class="price">
-                <a  [routerLink]="['/detail']" routerLinkActive="active" class="dropdown-item"><p>£250</p></a>
+                <a  [routerLink]="['/detail']" routerLinkActive="active" class="dropdown-item"><p>{{prod.price}}</p></a>
             </div>
             
           </div>

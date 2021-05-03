@@ -4,7 +4,7 @@
 }
 
 #carouselExampleCaptions .carousel-item {
-    height: 550px;
+    height: 20%;
   }
   
   .carousel-caption {
@@ -22,12 +22,20 @@
     object-fit: cover;
 }
 
+.catergoryContainer{
+    padding-left: 20px;
+    position: relative;
+}
 
-
+.carousel slide{
+    height: 40%;
+}
 .custom{
-    margin-left: 15%;
-    height:500px;
-    width:70%;
+    position: relative;
+    display: inline-block;
+    margin-left: 30px;
+    height: 500px;
+    width:400px;
     margin-top:5%;
     box-shadow: 0 18px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 15px 50px;
@@ -42,9 +50,11 @@
 
 
 .custom img{
+    top: 40px;
+    position: relative;
     object-fit: fill;
     width:90%;
-    height: 500px;
+    height: 400px;
     border-radius: 15px 50px
 }
 

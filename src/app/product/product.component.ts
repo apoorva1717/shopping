@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ApiService } from '../service/api.service';
 
 @Component({
   selector: 'app-product',
@@ -6,8 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-  emps =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
-  constructor() { }
+  prods :any;
+  gender:string;
+  constructor(private route:ActivatedRoute,private ser:ApiService) { 
+    this.route.params.subscribe((param)=>{
+      this.gender=param.gender
+    })
+    this.route.queryParams.subscribe((params)=>{
+      console.log(params)
+    })
+    
+    this.ser.getProduct(this.gender).subscribe((prod)=>{
+      console.log(prod);
+      this.prods=prod;
+    })
+  }
 
   ngOnInit(): void {
   }

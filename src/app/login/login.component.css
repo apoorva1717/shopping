@@ -92,10 +92,9 @@ input {
 
 
 .container {
-    margin-top: 5%;
-    margin-left: 18%;
-    margin-right: 10%;
-    margin-bottom: 5%;
+    margin-top: 4%;
+    margin-left: 23%;
+	margin-right: 20%;
     display:inline-flex;
     align-content: center;
     
@@ -108,6 +107,26 @@ input {
 	width: 768px;
 	max-width: 100%;
 	min-height: 480px;
+}
+
+@media screen and (max-width:700px) {
+	.container {
+		margin-top: 4%;
+		margin-left: 0%;
+		margin-right: 0%;
+		display:inline-flex;
+		align-content: center;
+		
+		background-color: #fff;
+		border-radius: 10px;
+		  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+				0 10px 10px rgba(0,0,0,0.22);
+		position: relative;
+		overflow: hidden;
+		width: 768px;
+		max-width: 100%;
+		min-height: 480px;
+	}	
 }
 
 .form-container {
@@ -239,4 +258,8 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+}
+
+snack-bar-container .green{
+	background-color: greenyellow;
 }
