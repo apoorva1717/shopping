@@ -2,6 +2,7 @@
     padding: 60px;
     text-align: center;
     background: #66a094;
+    background: rgb(59, 59, 59);
     color: white;
     font-size: 40px;
     font-family: Oswald;
@@ -9,9 +10,9 @@
 
 .wrap {
     color: #404E67;
-    background: #000000;
+    background:rgb(223, 212, 212);
     font-family: 'Open Sans', sans-serif;
-    height:100000px;
+    height:auto;
 }
 .table-wrapper {
     width: 700px;

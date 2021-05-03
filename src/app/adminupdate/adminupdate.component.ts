@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { editDTO } from '../dataClasses/editDTO';
 import { ApiService } from '../service/api.service';
 
@@ -14,7 +14,7 @@ export class AdminupdateComponent implements OnInit {
   id:string
   edit:any
 
-  constructor(private route:ActivatedRoute,private ser:ApiService) {
+  constructor(private route:ActivatedRoute,private ser:ApiService,private rt:Router) {
     
     this.route.params.subscribe((param)=>{
       this.id=param.id
@@ -38,6 +38,9 @@ export class AdminupdateComponent implements OnInit {
 
     this.ser.editProduct(this.id,data).subscribe(e=>{
       console.log(e);   
+      alert("Done")
+      this.rt.navigateByUrl('/admin')
+
     })
   }
 
