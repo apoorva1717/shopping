@@ -22,9 +22,10 @@ export class ApiService {
     return this.http.get("http://localhost:55185/api/products?gender=")
   }
 
-  getProduct(data):Observable<Object>{
-    console.log(data);
-    return this.http.get("http://localhost:55185/api/products?gender="+data)
+  getProduct(gender,search):Observable<Object>{
+    //console.log(data);
+    console.log("http://localhost:55185/api/products?gender="+gender+"&search="+search)
+    return this.http.get("http://localhost:55185/api/products?gender="+gender+"&search="+search)
   }
   getProductById(data):Observable<Object>{
     console.log(data);

@@ -1,21 +1,23 @@
 .thumbnail{
-    margin-right: 20px;
-    margin-left: 20px;
-  }
+  margin-right: 20px;
+  margin-left: 20px;
+}
 
-  .headprod{
+.headprod{
 
-       padding-left: 8%;
-  }
+     padding-left: 8%;
+}
 
-  col-sm-12 col-md-10 col-md-offset-1{
-      margin-left: 10%;
-      
-  }
+col-sm-12 col-md-10 col-md-offset-1{
+    margin-left: 10%;
+    
+}
 
-  .EmptyCart{
-      width: 100%;
-  }
-  .EmptyCartImg{
+.EmptyCart{
     width: 100%;
-  }
+}
+.EmptyCartImg{
+    margin-left: 19%;
+  width: 60%;
+  height: 60%;
+}
