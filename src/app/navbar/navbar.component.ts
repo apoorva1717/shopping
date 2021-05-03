@@ -14,7 +14,10 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
   onSearch(){
-    this.router.navigate(['/product'],{queryParams:{search:this.search}})
+    this.router.navigateByUrl('/home').then(()=>{
+      this.router.navigate(['/product'],{queryParams:{search:this.search}})
+    })
+    
     console.log(this.search)
   }
   async Logout(){
