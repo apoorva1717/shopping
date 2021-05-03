@@ -1,55 +1,70 @@
-<h1>Edit Product</h1>
-
 <div class="wrap">
-<form #editform="ngForm" (ngSubmit)="onSubmitadd(editform.value)">
+
+  <div class="header">
+    <span>Edit Product</span>
+  </div>
+
+
+  <div class="container">
+
+
 
     <div class="row">
-        <div class="col-md-6">
-          
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text"  class="form-control" name="name"  [(ngModel)] = edit.name  />
-            </div>
+      <div class="col-md-7">
+        <form #editform="ngForm" (ngSubmit)="onSubmitadd(editform.value)">
 
-            <div class="form-group ">
-                <label>Description</label>
-                <input type="text"  class="form-control" name="description"   [(ngModel)] = edit.description  />
-            </div>
+          <div class="form-group custom">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" [(ngModel)]=edit.name />
+          </div>
 
-            <div class="form-group ">
-                <label>Price</label>
-                <input type="number"  class="form-control" name="price"  [(ngModel)] = edit.price/>
-            </div>
+          <div class="form-group custom ">
+            <label>Description</label>
+            <input type="text" class="form-control" name="description" [(ngModel)]=edit.description />
+          </div>
 
-            <div class="form-group ">
-                <label>Image</label>
-                <input type="text" class="form-control" name="image"   [(ngModel)] = edit.image />
-            </div>
+          <div class="form-group custom">
+            <label>Price</label>
+            <input type="number" class="form-control" name="price" [(ngModel)]=edit.price />
+          </div>
 
-            <div class="form-group ">
-                <label>Gender</label>
-                <input type="text" class="form-control" name="gender" [(ngModel)] = edit.gender   />
-            </div>
+          <div class="form-group custom">
+            <label>Image</label>
+            <input type="text" class="form-control" name="image" [(ngModel)]=edit.image />
+          </div>
 
-            <div class="form-group ">
-                <label>Category</label>
-                <input type="text" class="form-control" name="mainCategory"   [(ngModel)] = edit.mainCategory />
-            </div>
+          <div class="form-group custom">
+            <label>Gender</label>
+            <input type="text" class="form-control" name="gender" [(ngModel)]=edit.gender />
+          </div>
 
-            <div class=login>
-                <input type="submit" [disabled]="editform.invalid" value="add" />
-            </div>  
-            
-            
-          
-        </div>
+          <div class="form-group custom">
+            <label>Category</label>
+            <input type="text" class="form-control" name="mainCategory" [(ngModel)]=edit.mainCategory />
+          </div>
+
+          <div>
+            <input class=edit type="submit" [disabled]="editform.invalid" value="Save" />
+          </div>
+
+        </form>
+
+      </div>
+
+
+
+
+
+      <div class="col-md-5">
+       
+          <img src={{edit.image}} />
+        
+      </div>
     </div>
 
-</form>
-</div>
 
-<div>
-    <img src={{edit.image}}/>
+  </div>
+
 </div>
 
 
