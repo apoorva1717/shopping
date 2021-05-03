@@ -2,28 +2,30 @@
 
 <div class="container" id="container" #container>
 	<div class="form-container sign-up-container">
-		<form action="#" >
+		<form #SignUp="ngForm">
 			<h3>Create Account</h3>
 			
 
-			<input type="text" placeholder="Name" required/>
-			<input type="email" placeholder="Email"  required/>
-			<input type="password" placeholder="Password" required/>
-            <input type="text" placeholder="Address" required/>
-            <input type="number" placeholder="Contact No." required>
-            <input type="date" placeholder="Date Of birth" required/>
+			<input type="text" placeholder="Name" name="name" required [(ngModel)]=signup.name/>
+			<input type="email" placeholder="Email" name="email" required [(ngModel)]=signup.email/>
+			<input type="password" placeholder="Password" name ="password" required [(ngModel)]=signup.password/>
+            <input type="text" placeholder="Address" name ="address" required [(ngModel)]=signup.address/>
+            <input type="number" placeholder="Contact No." name="number" required [(ngModel)]=signup.number/>
+            <input type="date" placeholder="Date Of birth" name="dob" required [(ngModel)]=signup.dob/>
 
-			<button>Sign Up</button>
+			<button (click)="OnSignUp()">Sign Up</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#" #SingIn="ngForm">
+		<form #SignIn="ngForm">
 			<h1>Sign in</h1>
 
-			<input type="email" placeholder="Email" name="username" [(ngModel)]=username/>
-			<input type="password" placeholder="Password" name="password" [(ngModel)]=password/>
+			<input type="email" placeholder="Email" name="name" required #name="ngModel" [(ngModel)]=login.email/>
+			<div *ngIf="name.invalid && (name.dirty || name.touched)" class=error>Please enter data</div>
+			
+			<input type="password" placeholder="Password" name="password" required [(ngModel)]=login.password/>
 			<a href="#">Forgot your password?</a>
-			<button (click)="OnLogin()">Sign In</button>
+			<button [disabled]="SignIn.invalid" (click)="OnLogin()">Sign In</button>
 		</form>
 	</div>
 	<div class="overlay-container">

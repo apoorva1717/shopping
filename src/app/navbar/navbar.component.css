@@ -3,6 +3,11 @@
 
 }
 
+
+.customnav{
+    width: 100%;
+}
+
 #icon:hover{
     opacity:100%;
     transform: scale(1.5);

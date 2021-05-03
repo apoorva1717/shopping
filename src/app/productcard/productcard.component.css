@@ -18,7 +18,7 @@ html, body {
 }
 .wrapper:hover {
     transform: scale(1);
-    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 .wrapper .container {
     width: 100%;
@@ -27,7 +27,7 @@ html, body {
 .wrapper .container .top {
     height: 75%;
     width: 100%;
-    background: url(https://fashionweekdaily.com/hill-house-home-new-nap-dress-collection/hhh_shot5_trellispattern_part1_drew_366-copy-edit/) no-repeat center center;
+    
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -36,6 +36,7 @@ html, body {
 .wrapper .container .bottom {
     width: 200%;
     height: 25%;
+    margin-left: 0%;
     transition: transform 0.5s;
 }
 .wrapper .container .bottom.clicked {
@@ -116,7 +117,7 @@ html, body {
     width: calc(30% - 1px);
     clear: both;
     border-right: solid thin rgba(255, 255, 255, 0.3);
-    height: 60%;
+    height: 50%;
     background: #bc3b59;
     transition: transform 0.5s, background 0.5s;
 }
@@ -146,3 +147,4 @@ html, body {
 p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
