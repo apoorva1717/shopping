@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,12 +9,27 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   search:string;
-  constructor(private router:Router) { }
+  constructor(private router:Router,private snackbar:MatSnackBar) { }
 
   ngOnInit(): void {
   }
   onSearch(){
     this.router.navigate(['/product'],{queryParams:{search:this.search}})
     console.log(this.search)
+  }
+  async Logout(){
+    localStorage.removeItem('user')
+    
+    
+    await this.snackbar.open(": :Logged Successfully  ",'',{
+      verticalPosition:'top',
+      horizontalPosition:'right',
+      'panelClass':'green'
+    })
+    
+
+    setTimeout(()=>{this.router.navigateByUrl("")
+    this.snackbar.dismiss()},1500)
+    
   }
 }
