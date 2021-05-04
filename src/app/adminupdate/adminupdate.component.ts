@@ -31,9 +31,6 @@ export class AdminupdateComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  
-
   onSubmitadd(data:any){
 
     this.ser.editProduct(this.id,data).subscribe(e=>{

@@ -27,10 +27,12 @@ export class ApiService {
     console.log("http://localhost:55185/api/products?gender="+gender+"&search="+search)
     return this.http.get("http://localhost:55185/api/products?gender="+gender+"&search="+search)
   }
+
   getProductById(data):Observable<Object>{
     console.log(data);
     return this.http.get("http://localhost:55185/api/products/"+data)
   }
+  
   placeOrder(id,data):Observable<Object>{
     console.log(data);
     return this.http.post("http://localhost:55185/api/user/" +id+"/order",data)
