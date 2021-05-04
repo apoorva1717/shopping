@@ -10,8 +10,9 @@
       <div class="left">
         <div class="details">
           <div class="title">
-              <a  [routerLink]="['/detail/'+prod.pid]" routerLinkActive="active" class="dropdown-item"><p>{{prod.name}}</p></a>
-              
+            
+              <p (click)="showDetails(prod.pid)">{{prod.name}}</p>
+            
           </div>
           <div class="price">
               <a  [routerLink]="['/detail/'+prod.pid]" routerLinkActive="active" class="dropdown-item"><p>₹{{prod.price}}</p></a>
