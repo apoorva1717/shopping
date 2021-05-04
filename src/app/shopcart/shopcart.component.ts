@@ -93,6 +93,7 @@ export class ShopcartComponent implements OnInit {
         horizontalPosition:'right',
         'panelClass':'Red'
       })
+      this.router.navigateByUrl("/login")
      }
      else{
       this.dialog.open(OrderDialogComponent)

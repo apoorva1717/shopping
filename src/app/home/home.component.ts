@@ -11,7 +11,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  slides = [{'image': 'https://therichpost.com/wp-content/uploads/2021/02/Vuejs-Fashion-Ecommerce-Template-Free.png'}, 
-  {'image': 'https://therichpost.com/wp-content/uploads/2021/02/angular-11-bootstrap-4.5-Ecommerce-Template-Free.png'},
-  {'image': 'https://therichpost.com/wp-content/uploads/2020/10/Angular-10-Learning-Education-Center-Free-Template-1.png'}, {'image': 'https://therichpost.com/wp-content/uploads/2020/11/Reactjs-Easy-Shop-Free-Template-with-Source-Code.png'}, {'image': 'https://therichpost.com/wp-content/uploads/2021/02/angular-11-bootstrap-4.5-Ecommerce-Template-Free.png'}];
-}
+  slides = [
+    {'image': 'https://forever21.imgix.net/img/app/shopmedia/production/1/16-66-6821.jpg?w=1349&auto=format'}, 
+  {'image': 'https://forever21.imgix.net/img/app/shopmedia/production/1/16-66-6825.jpg?w=1349&auto=format'},
+    {'image': 'https://img.freepik.com/free-vector/fashion-background-with-shirt-sunglasses-pants-shoes_83728-1890.jpg?size=626&ext=jpg'}, 
+  {'image': 'https://storage.sg.content-cdn.io/in-resources/22a79ec5-e694-4d7a-ac5a-85c8fa45b7f1/Images/userimages/summer-shirts-new-m.jpg'},
+  
+   {'image': 'https://sslimages.shoppersstop.com/sys-master/root/h09/hd7/16593746362398/Gini-%26-Jony--WEB-01.jpg'}];
+  }

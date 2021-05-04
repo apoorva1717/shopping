@@ -133,7 +133,7 @@ html, body {
 }
 .wrapper .container .bottom .right .remove i {
     transition: transform 0.5s;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 20px;
     padding: 15px;
     color: white;
@@ -145,6 +145,7 @@ html, body {
 
 .title{
     height: 50px;
+    width:100px;
 }
 
 
