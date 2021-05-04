@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit,Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from '../service/api.service';
 
 @Component({
@@ -8,10 +9,13 @@ import { ApiService } from '../service/api.service';
 })
 export class ProductcardComponent implements OnInit {
   @Input () prod:any;
-  constructor(private elementRef:ElementRef,private ser:ApiService) { 
+  constructor(private elementRef:ElementRef,private ser:ApiService,private route:Router) { 
       }
 
   ngOnInit(): void {
+  }
+  showDetails(data){
+    this.route.navigateByUrl('/detail/'+data)
   }
   AddToCart(){
     const items = (() => {

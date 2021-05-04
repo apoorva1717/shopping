@@ -63,6 +63,7 @@ html, body {
 .wrapper .container .bottom .left .details {
     padding: 15px;
     float: left;
+    word-wrap: normal;
     width: calc(70% - 40px);
 }
 .wrapper .container .bottom .left .buy {
@@ -150,4 +151,3 @@ html, body {
 p{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-

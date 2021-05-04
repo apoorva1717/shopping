@@ -9,7 +9,10 @@
   }
 
 
-
+.row{
+    display: flex;
+    flex-direction: row;
+}
 .wrap {
     color: #404E67;
     background: rgb(223, 212, 212);
@@ -44,12 +47,14 @@ form {
     margin-left: 34%;
 }
 
-
-
-img{
-    height:60%;
-    width:80%;
-    margin-top: 30%;
-    margin-left: 10%;
-
+.previewImage{
+    margin-top: 120px;
+    height: 400px;
+    width: 400px;
 }
+
+.previewImage img{
+    height: 400px;
+    width: 400px;
+}
+
